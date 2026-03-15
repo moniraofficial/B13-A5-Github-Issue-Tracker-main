@@ -56,8 +56,8 @@
     </section>
 
     <section id="main-section" class="hidden">
-        <div class="navbar bg-white border-b border-gray-100 shadow-sm px-4 lg:px-20 py-4 items-center">
-            <div class="flex-1 flex items-center gap-2">
+     <div class="navbar bg-white border-b border-gray-100 shadow-sm px-4 lg:px-20 py-4 items-center">
+        <div class="flex-1 flex items-center gap-2">
             <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Logo" class="w-8 h-8 items-center">
             <a class="text-xl font-bold text-Black-600">GitHub Issues Tracker</a>
         </div>
@@ -69,11 +69,16 @@
                 <button onclick="handleSearch()" class="btn btn-primary join-item bg-blue-600 border-none px-6">
                     Search
                 </button>
-                
             </div>
-        </div>
 
+            <button class="btn btn-success gap-2 text-white bg-blue-500 border-none hover:bg-blue-600 shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
+                <span class="hidden sm:inline">New Issue</span>
+            </button>
         </div>
+    </div>
 
     </section>
 
