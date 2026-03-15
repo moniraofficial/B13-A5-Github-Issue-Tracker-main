@@ -11,7 +11,52 @@
         .border-closed { border-top: 5px solid #a855f7 !important; }
     </style>
 </head>
-<body>
+<body class="bg-base-200 min-h-screen font-sans">
+<!-- login details -->
+    <section id="login-section" class="flex flex-col items-center justify-center min-h-screen px-4">
+        <div class="card w-full max-w-sm bg-base-100 shadow-2xl p-8">
+            <div class="flex flex-col items-center mb-6">
+                <div >
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Logo" class="w-20 h-20 mb-4">
+            
+                </div>
+                <h1 class="text-2xl font-bold">GitHub Issues Tracker</h1>
+                <p class="text-sm opacity-60">Sign in to manage your issues</p>
+            </div>
+            
+            <div class="form-control w-full">
+                <label class="label"><span class="label-text">Username</span></label>
+                <input type="text" id="username" placeholder="Enter Username" class="input input-bordered w-full" />
+                <p class="text-[12px] text-blue-600 font-medium">Dafualt: admin</p>
+            </div>
+            <div class="form-control w-full mt-2">
+                <label class="label"><span class="label-text">Password</span></label>
+                <input type="password" id="password" placeholder="Enter Password" class="input input-bordered w-full" />
+                <p class="text-[12px] text-blue-600 font-medium">Dafualt: admin123</p>
+            </div>
+            
+            <button onclick="handleLogin()" class="btn btn-primary w-full mt-6">Sign In</button>
+           
+<!-- or section -->
+    <div class="flex items-center my-6">
+    <div class="flex-grow border-t border-gray-300"></div>
+    <span class="flex-shrink mx-4 text-gray-400 text-sm font-medium uppercase tracking-wider">OR</span>
+    <div class="flex-grow border-t border-gray-300"></div>
+    </div>
+            <div class="rounded-lg text-xs text-center">
+                <p class="py-2"><strong>Demo Credential:</strong></p>
+            </div>
+            <div class="py-2 text-center bg-blue-50 border-blue-100">
+                <p><span class="font-bold">Username:</span> admin</p>
+                <p><span class="font-bold">Password:</span> admin123</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
     <script src="./script.js"></script>
 </body>
 </html>
